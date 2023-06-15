@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnVerA"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:backgroundTint="#FF9800"
+                    android:text="ver ponto a"
+                    android:textColor="#F8F5F5"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnLerA"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:backgroundTint="#673AB7"
+                    android:text="ler ponto a"
+                    android:textColor="#F8F5F5"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtPontoA"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:inputType="textMultiLine|textPersonName"
+                android:maxLines="5"
+                android:ems="10"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnVerB"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:backgroundTint="#FF9800"
+                    android:text="ver ponto b"
+                    android:textColor="#F8F5F5"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnLerB"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:backgroundTint="#673AB7"
+                    android:text="ler ponto b"
+                    android:textColor="#F8F5F5"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edtPontoB"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:inputType="textMultiLine|textPersonName"
+                android:maxLines="5"
+                android:ems="10"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnDistancia"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:backgroundTint="#03A9F4"
+                    android:text="Distância"
+                     android:textColor="#F8F5F5"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:backgroundTint="#F44336"
+                android:text="Reset"
+                android:textColor="#F8F5F5"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <WebView
+            android:id="@+id/webv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
